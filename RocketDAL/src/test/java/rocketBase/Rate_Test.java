@@ -10,17 +10,9 @@ import rocketDomain.RateDomainModel;
 
 public class Rate_Test {
 
-	@Test
-	public void known_() {
-		
-	}
 	//TODO - RocketDAL rate_test
 	//		Check to see if a known credit score returns a known interest rate
 	
-	@Test
-	public void no_rate_test() {
-		
-	}
 	//TODO - RocketDAL rate_test
 	//		Check to see if a RateException is thrown if there are no rates for a given
 	//		credit score
