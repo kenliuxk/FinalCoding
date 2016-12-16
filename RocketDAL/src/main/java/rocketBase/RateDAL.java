@@ -25,11 +25,11 @@ public class RateDAL {
 		try {
 			tx = session.beginTransaction();	
 			
-			//TODO - RocketDALRateDAL.getAllRates
+			// - RocketDALRateDAL.getAllRates
 			//			probably not a bad idea to sort the results...  Add an OrderBy
 			//			example can be found here:
 			//  		http://www.tutorialspoint.com/hibernate/hibernate_query_language.htm			
-			List lstRates = session.createQuery("FROM RateDomainModel").list();
+			List lstRates = session.createQuery("FROM RateDomainModel R ORDER BY R.MinCreditScore DESC").list();
 			for (Iterator iterator = lstRates.iterator(); iterator.hasNext();) {
 				RateDomainModel rte = (RateDomainModel) iterator.next();
 				alRates.add(rte);

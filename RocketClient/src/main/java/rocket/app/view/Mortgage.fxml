@@ -1,10 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="rocket.app.view.MortgageController">
-
+<AnchorPane prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rocket.app.view.MortgageController">
+   <children>
+      <Label fx:id="lblIncome" layoutX="18.0" layoutY="14.0" prefHeight="40.0" prefWidth="140.0" text="Monthly Income" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTerm" layoutX="18.0" layoutY="267.0" prefHeight="40.0" prefWidth="140.0" text="Term" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="lblDownPayment" layoutX="18.0" layoutY="211.0" prefHeight="40.0" prefWidth="140.0" text="Down Payment" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHouseCost" layoutX="14.0" layoutY="127.0" prefHeight="40.0" prefWidth="120.0" text="House Cost" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCreditScore" layoutX="14.0" layoutY="87.0" prefHeight="40.0" prefWidth="140.0" text="Credit Score" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblExpenses" layoutX="14.0" layoutY="54.0" prefHeight="40.0" prefWidth="140.0" text="Monthly Expenses" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPayment" layoutX="50.0" layoutY="369.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Calculate Payment" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="340.0" />
+      <TextField fx:id="txtIncome" layoutX="169.0" layoutY="25.0" prefHeight="40.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="txtDownPayment" layoutX="160.0" layoutY="180.0" prefHeight="40.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="180.0" />
+      <TextField fx:id="txtHouseCost" layoutX="160.0" layoutY="131.0" prefHeight="40.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="txtCreditScore" layoutX="176.0" layoutY="100.0" prefHeight="40.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="txtExpenses" layoutX="169.0" layoutY="69.0" prefHeight="40.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="60.0" />
+      <ComboBox fx:id="loanTerm" layoutX="155.0" layoutY="240.0" prefHeight="40.0" prefWidth="150.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="lblError" layoutX="14.0" layoutY="288.0" prefHeight="40.0" prefWidth="360.0" text="Please enter all required information above." AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
